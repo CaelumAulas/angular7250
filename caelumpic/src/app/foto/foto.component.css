@@ -1,0 +1,8 @@
+.imagem {
+  width: 50%;
+  background-color: attr(data-color)
+}
+
+.imagem::before {
+  content: attr(data-color)
+}

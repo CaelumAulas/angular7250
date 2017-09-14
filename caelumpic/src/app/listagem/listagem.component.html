@@ -1,0 +1,16 @@
+<div class="jumbotron">
+  <h1 class="title">
+    {{title}}
+  </h1>
+</div>
+
+<a [routerLink]="['/cadastro']">Cadastro</a>
+<a href="/cadastro">Cadastro Normal</a>
+
+<div class="container text-center">
+  <div class="row">
+    <app-painel *ngFor="let foto of fotos" titulo="{{foto.titulo}}" class="col-md-2">
+      <app-foto url="{{foto.url}}" title="{{foto.titulo}}"></app-foto>
+    </app-painel>
+  </div>
+</div>
